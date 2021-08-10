@@ -12,10 +12,10 @@ namespace TelebotStandBy.Service.RobotImpleFunc
         private IWhite _white;
         private IUser _user;
 
-        public RobotCmderMethod(RobotFuncCore robotFuncCore) : base(robotFuncCore)
+        public RobotCmderMethod(IRobotApi robotApi) : base(robotApi)
         {
-            _white = new RobotWhiteMethod(robotFuncCore);
-            _user = new RobotUserMethod(robotFuncCore);
+            _white = new RobotWhiteMethod(robotApi);
+            _user = new RobotUserMethod(robotApi);
         }
 
         /// <summary>
@@ -56,7 +56,7 @@ namespace TelebotStandBy.Service.RobotImpleFunc
         /// <param name="userid"></param>
         public void Cmder(int userid)
         {
-            _robotFuncCore.RobotApi(userid, "cmder 指令");
+            _robotApi.RobotApi(userid, "cmder 指令");
         }
 
         /// <summary>

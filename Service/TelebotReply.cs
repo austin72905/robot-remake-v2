@@ -9,6 +9,8 @@ namespace TelebotStandBy.Service
     public abstract class TelebotReply
     {
         protected TelebotCore _telebotCore;
+
+        //自訂要實作的方法
         protected abstract IReplyToUser _robotFuncCore { get; }
 
         public TelebotReply(TelebotCore telebotCore)

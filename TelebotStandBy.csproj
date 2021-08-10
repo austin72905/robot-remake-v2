@@ -120,6 +120,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Common\Verify.cs" />
     <Compile Include="Controllers\DiSanFangController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -132,10 +133,12 @@
     <Compile Include="Interface\IRecord.cs" />
     <Compile Include="Interface\IReplyToUser.cs" />
     <Compile Include="Interface\IReply_To_Message.cs" />
+    <Compile Include="Interface\IRobotApi.cs" />
     <Compile Include="Interface\IUser.cs" />
     <Compile Include="Interface\IWhite.cs" />
     <Compile Include="Interface\IReplyStrategy.cs" />
     <Compile Include="Models\TelegramMessage.cs" />
+    <Compile Include="Models\ThridInfoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\ApiMethod.cs" />
     <Compile Include="Service\RobotClient\RobotService.cs" />
@@ -143,6 +146,7 @@
     <Compile Include="Service\RobotClient\TelebotCore.cs" />
     <Compile Include="Service\RobotFuncManagement\RobotFunc.cs" />
     <Compile Include="Service\RobotFuncManagement\RobotFuncCore.cs" />
+    <Compile Include="Service\RobotFuncManagement\RobotFuncCoreOld.cs" />
     <Compile Include="Service\RobotImpleFunc\RobotCmderMethod.cs" />
     <Compile Include="Service\RobotImpleFunc\RobotForwardMethod.cs" />
     <Compile Include="Service\RobotImpleFunc\RobotPaySetMethod.cs" />

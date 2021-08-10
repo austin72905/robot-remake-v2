@@ -12,7 +12,7 @@ namespace TelebotStandBy.Service.RobotClient
     {
         //每個機器人獨一無二的token
         public abstract string Token { get; }
-
+        //自訂要判斷的情境
         protected abstract TelebotReply _telebotReply { get; }
 
         //三方名稱

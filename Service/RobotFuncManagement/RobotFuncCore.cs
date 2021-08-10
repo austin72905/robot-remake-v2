@@ -8,7 +8,7 @@ using TelebotStandBy.Service.RobotImpleFunc;
 
 namespace TelebotStandBy.Service.RobotFuncManagement
 {
-    public abstract class RobotFuncCore: IReplyToUser
+    public abstract class RobotFuncCore: IReplyToUser,IRobotApi
     {
         private ICmder _cmder;
         private IRecord _record;

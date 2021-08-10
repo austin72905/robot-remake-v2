@@ -9,10 +9,10 @@ namespace TelebotStandBy.Service.RobotImpleFunc
 {
     public class RobotForwardMethod : ApiMethod, IForward
     {
-        public RobotForwardMethod(RobotFuncCore robotFuncCore) : base(robotFuncCore) { }
+        public RobotForwardMethod(IRobotApi robotApi) : base(robotApi) { }
         public void RobotAddWhite(int userid, string text)
         {
-            _robotFuncCore.RobotApi(userid, text);
+            _robotApi.RobotApi(userid, text);
         }
 
     }

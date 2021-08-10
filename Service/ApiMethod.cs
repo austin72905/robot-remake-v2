@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using TelebotStandBy.Interface;
 using TelebotStandBy.Service.RobotFuncManagement;
 
 namespace TelebotStandBy.Service
 {
     public abstract class ApiMethod
     {
-        protected RobotFuncCore _robotFuncCore;
-        public ApiMethod(RobotFuncCore robotFuncCore)
+        protected IRobotApi _robotApi;       
+        public ApiMethod(IRobotApi robotApi)
         {
-            _robotFuncCore = robotFuncCore;
+            _robotApi = robotApi;
         }
 
 
@@ -20,7 +21,7 @@ namespace TelebotStandBy.Service
         /// </summary>
         protected void RobotApi(int userid, string text)
         {
-            _robotFuncCore.RobotApi(userid, text);
+            _robotApi.RobotApi(userid, text);
         }
     }
 }
